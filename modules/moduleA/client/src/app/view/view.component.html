@@ -1,0 +1,53 @@
+<style>
+    main {
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fafafa;
+        color: #1e293b;
+    }
+
+    .header {
+        width: 100vw;
+        height: 40px;
+        background-color: #075985;
+        color: #f1f5f9;
+        display: flex;
+        align-items: center;
+    }
+
+    .header > span {
+        margin-left: 10px;
+    }
+
+    .data {
+        width: calc(100vw-10px);
+        height: calc(100vh - 50px);
+        padding: 5px;
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .data > div {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        background-color: #e5e5e5;
+        border: 2px solid #e6e6e6;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<main>
+    <div class="header">
+        <span>Module A</span>
+    </div>
+    <div class="data">
+        <div *ngFor="let demo of data">{{demo.name}}</div>
+    </div>
+</main>
