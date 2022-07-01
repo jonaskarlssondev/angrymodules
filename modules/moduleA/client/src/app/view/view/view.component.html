@@ -20,6 +20,12 @@
         margin-left: 10px;
     }
 
+    .header > a {
+        margin-left: 20px;
+        text-decoration: underline;
+        color: #f1f5f9;
+    }
+
     .data {
         width: calc(100vw-10px);
         height: calc(100vh - 50px);
@@ -45,7 +51,7 @@
 
 <main>
     <div class="header">
-        <span>Module A</span>
+        <span>Module A - View module</span>
     </div>
     <div class="data">
         <div *ngFor="let demo of data">{{demo.name}}</div>
