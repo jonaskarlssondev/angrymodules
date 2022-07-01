@@ -1,0 +1,13 @@
+services:
+  ui:
+    build: ui
+    ports:
+      - "4200:80"
+  module-a-client:
+    build: modules/moduleA/client
+    ports:
+      - "4201:80"
+  module-a-server:
+    build: modules/moduleA/server/A
+    ports:
+      - "8081:80"
